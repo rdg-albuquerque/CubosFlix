@@ -1,0 +1,308 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+
+    font-family: 'Manrope';
+
+    background-color: var(--cor-background);
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+
+    color: white;
+    background: #A785ED;
+    
+    padding: 15px;
+    margin-bottom: 40px;
+}
+
+.movies > span {
+    font-size: 16px;
+}
+
+/*
+
+CONTAINER
+
+*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+
+    width: 936px;
+
+    margin-bottom: 50px;
+}
+
+.input {
+    all: unset;
+    box-sizing: border-box;
+    width: 400px;
+
+    padding: 14px;
+    padding-right: 0 ;
+    margin-bottom: 40px;
+    
+    color: var(--cor-texto);
+    border: 1px solid var(--cor-texto);
+    border-radius: 8px;
+}
+
+.input::placeholder {
+    color: var(--cor-texto);
+}
+
+.movies-container {
+    position: relative;
+
+    display: flex;
+
+    margin-bottom: 40px;
+
+}
+
+.movies {
+    display: flex;
+    justify-content: center;
+
+    width: 936px;
+
+    gap: 24px;
+}
+
+.movie {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    width: 168px;
+    height: 300px;
+
+    background-size: cover;
+    background-position: center;
+
+    box-shadow: var(--box-shadow);
+}
+
+.movie__title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.movie__info {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.8);
+    
+    color: white;
+
+    
+    padding: 10px;
+}
+
+.movie__rating {
+    display: flex;
+    align-items: center;
+
+    color: #FBCD6E;
+    font-size: 12px;
+}
+
+.movie__rating img {
+    margin-right: 2px;
+}
+
+
+.btn-prev {
+    position: absolute;
+    align-self: center;
+    left: -48px;
+}
+
+.btn-next {
+    position: absolute;
+    align-self: center;
+    
+    right: -48px;
+
+}
+
+.subtitle {
+    margin-bottom: 16px;
+    font-size: 24px;
+    color: var(--cor-texto);
+}
+
+.highlight {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.highlight__video-link {
+    width: 550px;
+}
+
+.highlight__video {
+    width: 100%;
+    height: 100%;
+
+    background-size: cover;
+    background-color: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.highlight__info {
+    width: 360px;
+    padding: 16px;
+    background-color: var(--cor-background-hightlight);
+    box-shadow: var(--box-shadow);
+}
+
+.highlight__title-rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin-bottom: 8px;
+
+    font-size: 24px;
+}
+
+.highlight__title {
+    color: #E183C8;
+}
+
+.highlight__rating {
+    color: #A785ED;
+}
+
+.highlight__genre-launch {
+    margin-bottom: 30px;
+
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 150%;    
+    text-transform: uppercase;    
+    color: var(--cor-texto);
+    opacity: 0.7;
+}
+
+.highlight__description{
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--cor-texto);
+    opacity: 0.8;
+
+}
+
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+
+    min-height: 100%;
+    padding: 150px 600px;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    overflow-y: scroll;
+
+}
+
+.modal__close {
+    position: absolute;
+    top: 56px;
+    right: 56px;
+
+    cursor: pointer;
+}
+
+.modal__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 150%;
+
+    margin-bottom: 40px;
+}
+
+.modal__img {
+    width: 100%;
+
+    margin-bottom: 20px;
+}
+
+.modal__description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+
+    margin-bottom: 20px;
+}
+
+.modal__genre-average {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+}
+
+.genero {
+    background: #E183C8;
+    border-radius: 8px;
+
+    padding: 9px 11px;
+
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.modal__average {
+    background: #A785ED;
+
+    padding: 9px 11px;
+    border-radius: 8px;
+
+    font-size: 20px;
+}
+
+.hidden {
+    display: none;   
+}
+
+
+.mr-12 {margin-right: 12px;}
+.mr-24 {margin-right: 24px;}
