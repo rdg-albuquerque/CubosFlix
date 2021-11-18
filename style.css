@@ -4,17 +4,15 @@
     box-sizing: border-box;
 }
 
-
 body {
     display: flex;
     flex-direction: column;
 
     min-height: 100vh;
 
-    font-family: 'Manrope';
+    font-family: "Manrope";
 
     background-color: var(--cor-background);
-
 }
 
 .header {
@@ -22,8 +20,8 @@ body {
     justify-content: space-between;
 
     color: white;
-    background: #A785ED;
-    
+    background: #a785ed;
+
     padding: 15px;
     margin-bottom: 40px;
 }
@@ -55,9 +53,9 @@ CONTAINER
     width: 400px;
 
     padding: 14px;
-    padding-right: 0 ;
+    padding-right: 0;
     margin-bottom: 40px;
-    
+
     color: var(--cor-texto);
     border: 1px solid var(--cor-texto);
     border-radius: 8px;
@@ -73,7 +71,6 @@ CONTAINER
     display: flex;
 
     margin-bottom: 40px;
-
 }
 
 .movies {
@@ -109,10 +106,9 @@ CONTAINER
     display: flex;
     justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.8);
-    
+
     color: white;
 
-    
     padding: 10px;
 }
 
@@ -120,14 +116,13 @@ CONTAINER
     display: flex;
     align-items: center;
 
-    color: #FBCD6E;
+    color: #fbcd6e;
     font-size: 12px;
 }
 
 .movie__rating img {
     margin-right: 2px;
 }
-
 
 .btn-prev {
     position: absolute;
@@ -138,9 +133,8 @@ CONTAINER
 .btn-next {
     position: absolute;
     align-self: center;
-    
-    right: -48px;
 
+    right: -48px;
 }
 
 .subtitle {
@@ -183,18 +177,18 @@ CONTAINER
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
     margin-bottom: 8px;
 
     font-size: 24px;
 }
 
 .highlight__title {
-    color: #E183C8;
+    color: #e183c8;
 }
 
 .highlight__rating {
-    color: #A785ED;
+    color: #a785ed;
 }
 
 .highlight__genre-launch {
@@ -202,20 +196,18 @@ CONTAINER
 
     font-size: 12px;
     font-weight: 500;
-    line-height: 150%;    
-    text-transform: uppercase;    
+    line-height: 150%;
+    text-transform: uppercase;
     color: var(--cor-texto);
     opacity: 0.7;
 }
 
-.highlight__description{
+.highlight__description {
     font-weight: 500;
     font-size: 16px;
     color: var(--cor-texto);
     opacity: 0.8;
-
 }
-
 
 .modal {
     background-color: rgba(0, 0, 0, 0.9);
@@ -236,7 +228,6 @@ CONTAINER
     left: 0;
 
     overflow-y: scroll;
-
 }
 
 .modal__close {
@@ -280,7 +271,7 @@ CONTAINER
 }
 
 .genero {
-    background: #E183C8;
+    background: #e183c8;
     border-radius: 8px;
 
     padding: 9px 11px;
@@ -291,7 +282,7 @@ CONTAINER
 }
 
 .modal__average {
-    background: #A785ED;
+    background: #a785ed;
 
     padding: 9px 11px;
     border-radius: 8px;
@@ -300,9 +291,12 @@ CONTAINER
 }
 
 .hidden {
-    display: none;   
+    display: none;
 }
 
-
-.mr-12 {margin-right: 12px;}
-.mr-24 {margin-right: 24px;}
+.mr-12 {
+    margin-right: 12px;
+}
+.mr-24 {
+    margin-right: 24px;
+}
