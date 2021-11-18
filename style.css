@@ -92,6 +92,8 @@ CONTAINER
     background-position: center;
 
     box-shadow: var(--box-shadow);
+
+    cursor: pointer;
 }
 
 .movie__title {
